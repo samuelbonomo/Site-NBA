@@ -1,0 +1,50 @@
+html,body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: red;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 23vh 69vh 8vh;
+    grid-template-areas: "header main aside2"
+                         "aside main aside2"
+                         "footer footer footer";
+}
+header{
+    grid-area: header;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    background-color:darkred;
+    color: white;
+}
+main {
+    grid-area: main;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:darkred;
+    
+}
+aside {
+    grid-area: aside;
+    background-color:darkred;
+    color: white;
+}
+footer {
+    grid-area: footer;
+    background-color:blue;
+    color: white;
+    text-align: center;
+}
+.dois {
+    grid-area: aside2;
+    background-color: darkred;
+    color: white;
+}
+form{
+    color: white;
+}
+.table{
+    color: white;
+}
